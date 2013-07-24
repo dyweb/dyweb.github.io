@@ -97,5 +97,10 @@ var Page = (function() {
 })();
 
 $(document).ready(function(){
+    //page change
     Page.init();
+    //tooltip hover
+    $('.verticalMenu li a').hover(function(){
+        $(this).tooltip('toggle');
+    })
 })

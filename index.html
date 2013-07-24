@@ -8,13 +8,17 @@
     <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
     <link rel="stylesheet" type="text/css" href="css/demo4.css" />
     <script src="js/modernizr.custom.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-responsive.min.css">
 </head>
 <body>
     <ul class="verticalMenu">
         <li><a href="#" class="icon-logo">Logo</a></li>
-        <li class="current" data-navId="1"><a href="#" class="icon-home">Home</a></li>
-        <li data-navId="2"><a href="#" class="icon-search">Search</a></li>
-        <li data-navId="3"><a href="#" class="icon-location">Location</a></li>
+        <li class="current" data-navId="1"><a href="#" class="icon-home" data-toggle="tooltip" data-placement="right" title="主页">Home</a></li>
+        <li data-navId="2"><a href="#" class="icon-search" data-toggle="tooltip" data-placement="right" title="我们的作品">Search</a></li>
+        <li data-navId="3"><a href="#" class="icon-images" data-toggle="tooltip" data-placement="right" title="团队成员">Team</a></li>
+        <li data-navId="4"><a href="#" class="icon-email" data-toggle="tooltip" data-placement="right" title="联系我们">Location</a></li>
     </ul>
     <div class="container">
         <div class="bb-custom-wrapper">
@@ -45,6 +49,14 @@
                         <p>Wafer donut caramels chocolate caramels sweet roll. Gummi bears powder candy chocolate cake gummi bears icing wafer cupcake. Brownie cotton candy pastry chocolate wypas.</p>
                     </div>
                 </div>
+                <div class="bb-item">
+                    <div class="bb-custom-side">
+                        <p>page 4 left</p>
+                    </div>
+                    <div class="bb-custom-side">
+                        <p>page 4 right</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -54,6 +66,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.bookblock.js"></script>
     <script type="text/javascript" src="js/global.js"></script>
-
+    <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

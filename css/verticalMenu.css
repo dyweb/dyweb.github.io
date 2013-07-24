@@ -14,7 +14,6 @@
 
 .verticalMenu {
     position: fixed;
-    overflow: hidden;
     top: 0;
     left: 0;
     height: 100%;
@@ -22,6 +21,7 @@
     margin: 0;
     padding: 0;
     background: #e7e7e7;
+    font-size: 16px;
 }
 
 .verticalMenu li a {
@@ -29,6 +29,7 @@
     text-indent: -500em;
     height: 5em;
     width: 5em;
+    margin: 0;padding: 0;
     line-height: 5em;
     text-align: center;
     color: #999;
@@ -99,6 +100,10 @@
 
 .icon-home:before {
     content: "\e003";
+}
+
+.icon-email:before {
+    content: "\e001";
 }
 
 /* Example for media query (depends on total height of menu) */
