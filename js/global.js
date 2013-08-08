@@ -103,4 +103,8 @@ $(document).ready(function(){
     $('.verticalMenu li a').hover(function(){
         $(this).tooltip('toggle');
     })
+    $('.btn_loading').click(function(){
+        $(this).button('loading');
+    });
 })
+

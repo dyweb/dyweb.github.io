@@ -2,7 +2,20 @@ body,html,article,aside{
     height: 100%;
     margin: 0;padding: 0;
 }
-.container{
+.board{
     height: 100%;
-    margin-left: 5em;
+    margin-left: 8em;
+    margin-right: 1em;
+}
+
+.title{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+
+}
+
+.text_center{
+    width: 75%;
+    margin: auto;
 }
