@@ -1,12 +1,3 @@
-function verticalMenu_jump($navId){
-    $('.verticalMenu li').removeClass('current');
-    $('.verticalMenu li').each(function(){
-        if ($(this).attr('data-navId') == $navId){
-            $(this).addClass('current');
-        }
-    });
-};
-
 var Page = (function() {
     
     var config = {
@@ -15,7 +6,7 @@ var Page = (function() {
             $navPrev : $( '#bb-nav-prev' ),
             $navFirst : $( '#bb-nav-first' ),
             $navLast : $( '#bb-nav-last' ),
-            $navJump : $( '.verticalMenu li')
+            $navJump : $( '.vertical-menu li')
         },
         init = function() {
             config.$bookBlock.bookblock( {
@@ -51,21 +42,26 @@ var Page = (function() {
             } );
 
             config.$navJump.on( 'click touchstart', function() {
-                $id = $(this).attr('data-navId');
+                var $id = $(this).attr('data-navId');
                 if ($id > 0){
                     config.$bookBlock.bookblock( 'jump', $id );
-                    verticalMenu_jump($id);
+                    $('.vertical-menu li').removeClass('current');
+                    $('.vertical-menu li').each(function(){
+                        if ($(this).attr('data-navId') === $id){
+                            $(this).addClass('current');
+                        }
+                    });
                 }
                 return false;
             } );
             
             // add swipe events
             $slides.on( {
-                'swipeleft' : function( event ) {
+                'swipeleft' : function() {
                     config.$bookBlock.bookblock( 'next' );
                     return false;
                 },
-                'swiperight' : function( event ) {
+                'swiperight' : function() {
                     config.$bookBlock.bookblock( 'prev' );
                     return false;
                 }
@@ -92,7 +88,7 @@ var Page = (function() {
             } );
         };
 
-        return { init : init };
+    return { init : init };
 
 })();
 
@@ -100,11 +96,11 @@ $(document).ready(function(){
     //page change
     Page.init();
     //tooltip hover
-    $('.verticalMenu li a').hover(function(){
+    $('.vertical-menu li a').hover(function(){
         $(this).tooltip('toggle');
-    })
-    $('.btn_loading').click(function(){
+    });
+    $('.btn-loading').click(function(){
         $(this).button('loading');
     });
-})
+});
 
