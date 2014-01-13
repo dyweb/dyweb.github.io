@@ -19,3 +19,45 @@ body,html,article,aside{
     width: 75%;
     margin: auto;
 }
+
+body .row{
+    height: 100%;
+}
+
+.main{
+    background: url('/img/1.jpg') no-repeat;
+    background-size: cover;
+}
+
+.main h1{
+    color: white;
+    font-family: 黑体;
+    font-size: 7em;
+    margin: 10% 0 0 10%;
+}
+
+.color{
+    background: #2a1744;
+}
+
+.color h1{
+    color: white;
+    font-family: 黑体;
+    font-size: 6em;
+    margin: 11% 0 0 0;
+    text-align: center;
+}
+
+.cover{
+    background: url('/img/2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.cover h1{
+    color: white;
+    font-family: 黑体;
+    font-size: 6em;
+    margin: 11% 0 0 0;
+    text-align: center;
+}
+
