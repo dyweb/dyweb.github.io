@@ -36,6 +36,13 @@ body .row{
     margin: 10% 0 0 10%;
 }
 
+.arrow{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+}
+
 .color{
     background: #2a1744;
 }
