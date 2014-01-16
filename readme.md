@@ -1,5 +1,5 @@
 # DyHome
----
+
 ## 内容分配
 * 大图片（wordify，滚动）
 * dy精神，dy能力
@@ -8,9 +8,8 @@
 * contract-me
 
 ## 参考页面
-* http://jobs.ele.me/
-* http://prinzhorn.github.io/skrollr/examples/gradientsmotherfucker.html
-* http://rogerdudler.github.io/git-guide/index.zh.html
+* [页面思路](http://jobs.ele.me/)
+* [滚动效果](http://www.thepetedesign.com/demos/onepage_scroll_demo.html)
 
 ---
 ## What`s DyWeb?
