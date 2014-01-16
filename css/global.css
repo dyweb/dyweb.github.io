@@ -8,20 +8,26 @@ body,html,article,aside{
     margin-right: 1em;
 }
 
-.title{
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
-
-}
-
 .text_center{
     width: 75%;
     margin: auto;
 }
 
-body .row{
+body > .row{
     height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body > .spirit{
+    display: table;
+}
+
+body > .spirit > div{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .main{
@@ -43,16 +49,28 @@ body .row{
     bottom: 0px;
 }
 
-.color{
+.spirit{
     background: #2a1744;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
 }
 
-.color h1{
-    color: white;
-    font-family: 黑体;
-    font-size: 6em;
-    margin: 11% 0 0 0;
-    text-align: center;
+.spiritMain i{
+    font-size: 5em;
+    margin: 10px;
+}
+
+.spiritMain .title{
+    font-size: 2em;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+.spiritMain .footer{
+    font-size: 2em;
+    font-family: 楷体;
+    padding-top: 50px;
 }
 
 .cover{
@@ -66,5 +84,30 @@ body .row{
     font-size: 6em;
     margin: 11% 0 0 0;
     text-align: center;
+}
+
+@-webkit-keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spinAround {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes spinAround {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
