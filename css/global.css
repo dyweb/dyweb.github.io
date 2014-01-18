@@ -1,7 +1,14 @@
 body,html,article,aside{
     height: 100%;
     margin: 0;padding: 0;
+    font-size: 'Lato', Arial, sans-serif;
 }
+
+a, a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
 .board{
     height: 100%;
     margin-left: 8em;
@@ -28,6 +35,16 @@ body > .spirit > div{
     vertical-align: middle;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.icon{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2em;
+    width: 2em;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2em;
 }
 
 .main{
@@ -61,7 +78,7 @@ body > .spirit > div{
     margin: 10px;
 }
 
-.spiritMain .title{
+.title{
     font-size: 2em;
     padding-top: 20px; 
     padding-bottom: 20px;
@@ -71,19 +88,7 @@ body > .spirit > div{
     font-size: 2em;
     font-family: 楷体;
     padding-top: 50px;
-}
-
-.cover{
-    background: url('../img/2.jpg') no-repeat;
-    background-size: cover;
-}
-
-.cover h1{
-    color: white;
-    font-family: 黑体;
-    font-size: 6em;
-    margin: 11% 0 0 0;
-    text-align: center;
+    text-shadow: 0 0 10px rgba(255,255,255,0.9);
 }
 
 @-webkit-keyframes spinAround {
@@ -111,3 +116,23 @@ body > .spirit > div{
     }
 }
 
+.contribute{
+    background: url("../img/tree.png") no-repeat 0% 100% #3498db;
+    display: table;
+    font-size: 2em;
+    color: #fff;
+}
+
+.contribute > .row{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contribute p{
+    -webkit-transition: -webkit-transform 0.3s;
+}
+
+.contribute p:hover{
+    -webkit-transform: scale(0.9);
+    text-shadow: 0 0 10px #fff;
+}
