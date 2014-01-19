@@ -136,3 +136,37 @@ body > .spirit > div{
     -webkit-transform: scale(0.9);
     text-shadow: 0 0 10px #fff;
 }
+
+.member{
+    display: table;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+.mebmer .background{
+    position: absolute;
+}
+
+.member .middle{
+    display: table-cell;
+    vertical-align: middle;
+    width: 1200px;
+}
+
+.member h1{
+    font-size: 4em;
+}
+
+.member .media{
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 2px;
+    box-shadow: -1px -1px 5px #ccc;
+}
+
+.member .media img{
+    height: 64px;
+    width: 64px;
+}
