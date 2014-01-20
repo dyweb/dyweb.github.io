@@ -140,7 +140,7 @@ body > .spirit > div{
 
 .member{
     display: table;
-    background: rgba(0,0,0,0.8);
+    background: #333;
     color: #fff;
 }
 
@@ -151,7 +151,7 @@ body > .spirit > div{
 .member .middle{
     display: table-cell;
     vertical-align: middle;
-    width: 1200px;
+    width: 1000px;
 }
 
 .member h1{
@@ -162,7 +162,7 @@ body > .spirit > div{
 }
 
 .member .media{
-    width: 550px;
+    width: 500px;
     margin: 20px auto;
     padding: 20px;
     background-color: rgba(0,0,0,0);
@@ -179,4 +179,44 @@ body > .spirit > div{
 .member .media img{
     height: 96px;
     width: 96px;
+}
+
+.contract, .backimage{
+    display: table;
+    text-align: center;
+}
+
+.backimage{
+    position: fixed;
+    top: 0px;
+    z-index: -10;
+}
+
+.contract a{
+    color: #333;
+}
+
+.contract a:hover{
+    text-decoration: underline;
+}
+
+.backimage > .row, .contract > .row{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.backimage .leftImage{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contract .rightText{
+    text-align: left;
+    font-size: 2em;
+    font-family: 黑体;
+}
+
+.contract .rightText .special{
+    font-weight: bolder;
+    color: #3498db;
 }
