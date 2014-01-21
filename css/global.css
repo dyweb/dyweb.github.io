@@ -1,4 +1,4 @@
-body,html,article,aside{
+.start,html,article,aside,body{
     height: 100%;
     margin: 0;padding: 0;
     font-size: 'Lato', Arial, sans-serif;
@@ -20,17 +20,17 @@ a, a:hover{
     margin: auto;
 }
 
-body > .row{
+.start > .row{
     height: 100%;
     width: 100%;
     margin: 0;
 }
 
-body > .spirit{
+.start > .spirit{
     display: table;
 }
 
-body > .spirit > div{
+.start > .spirit > div{
     display: table-cell;
     vertical-align: middle;
     padding-left: 10%;
@@ -181,15 +181,9 @@ body > .spirit > div{
     width: 96px;
 }
 
-.contract, .backimage{
+.contract{
     display: table;
     text-align: center;
-}
-
-.backimage{
-    position: fixed;
-    top: 0px;
-    z-index: -10;
 }
 
 .contract a{
@@ -200,12 +194,12 @@ body > .spirit > div{
     text-decoration: underline;
 }
 
-.backimage > .row, .contract > .row{
+.contract > .row{
     display: table-cell;
     vertical-align: middle;
 }
 
-.backimage .leftImage{
+.contract .leftImage img{
     width: 90%;
     margin: 0 auto;
 }

@@ -1,106 +1,14 @@
-var Page = (function() {
-    
-    var config = {
-            $bookBlock : $( '#bb-bookblock' ),
-            $navNext : $( '#bb-nav-next' ),
-            $navPrev : $( '#bb-nav-prev' ),
-            $navFirst : $( '#bb-nav-first' ),
-            $navLast : $( '#bb-nav-last' ),
-            $navJump : $( '.vertical-menu li')
-        },
-        init = function() {
-            config.$bookBlock.bookblock( {
-                speed : 1000,
-                shadowSides : 0.8,
-                shadowFlip : 0.4
-            } );
-            initEvents();
-        },
-        initEvents = function() {
-            
-            var $slides = config.$bookBlock.children();
-
-            // add navigation events
-            config.$navNext.on( 'click touchstart', function() {
-                config.$bookBlock.bookblock( 'next' );
-                return false;
-            } );
-
-            config.$navPrev.on( 'click touchstart', function() {
-                config.$bookBlock.bookblock( 'prev' );
-                return false;
-            } );
-
-            config.$navFirst.on( 'click touchstart', function() {
-                config.$bookBlock.bookblock( 'first' );
-                return false;
-            } );
-
-            config.$navLast.on( 'click touchstart', function() {
-                config.$bookBlock.bookblock( 'last' );
-                return false;
-            } );
-
-            config.$navJump.on( 'click touchstart', function() {
-                var $id = $(this).attr('data-navId');
-                if ($id > 0){
-                    config.$bookBlock.bookblock( 'jump', $id );
-                    $('.vertical-menu li').removeClass('current');
-                    $('.vertical-menu li').each(function(){
-                        if ($(this).attr('data-navId') === $id){
-                            $(this).addClass('current');
-                        }
-                    });
-                }
-                return false;
-            } );
-            
-            // add swipe events
-            $slides.on( {
-                'swipeleft' : function() {
-                    config.$bookBlock.bookblock( 'next' );
-                    return false;
-                },
-                'swiperight' : function() {
-                    config.$bookBlock.bookblock( 'prev' );
-                    return false;
-                }
-            } );
-
-            // add keyboard events
-            $( document ).keydown( function(e) {
-                var keyCode = e.keyCode || e.which,
-                    arrow = {
-                        left : 37,
-                        up : 38,
-                        right : 39,
-                        down : 40
-                    };
-
-                switch (keyCode) {
-                    case arrow.left:
-                        config.$bookBlock.bookblock( 'prev' );
-                        break;
-                    case arrow.right:
-                        config.$bookBlock.bookblock( 'next' );
-                        break;
-                }
-            } );
-        };
-
-    return { init : init };
-
-})();
-
 $(document).ready(function(){
-    //page change
-    Page.init();
-    //tooltip hover
-    $('.vertical-menu li a').hover(function(){
-        $(this).tooltip('toggle');
-    });
-    $('.btn-loading').click(function(){
-        $(this).button('loading');
+    $(".start").onepage_scroll({
+       sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+       easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+       animationTime: 1000, // AnimationTime let you define how long each section takes to animate
+       pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+       updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+       beforeMove: function(index) {}, // This option accepts a callback function. The function will be called before the page moves.
+       afterMove: function(index) {}, // This option accepts a callback function. The function will be called after the page moves.
+       loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+       responsiveFallback: false // You can fallback to normal page scroll by defining the width of the browser in which you want the responsive fallback to be triggered. For example, set this to 600 and whenever the browser's width is less than 600, the fallback will kick in.
     });
 });
 
