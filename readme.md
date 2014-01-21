@@ -2,7 +2,7 @@
 
 ## 改进意见
 
-### 2013.1.20
+### 2014.1.20
 1. 下拉滚动，参考[滚动效果](http://www.thepetedesign.com/demos/onepage_scroll_demo.html)
 2. 东岳精神一栏，文字的补充
 3. 校园贡献一栏，左下角的图片需要拉伸
