@@ -78,6 +78,12 @@ a, a:hover{
     margin: 10px;
 }
 
+.active .rotate-me {
+    -webkit-animation: spinAround 6s linear 0s 1;
+    -moz-animation: spinAround 6s linear 0s 1;
+    animation: spinAround 6s linear 0s 1;
+}
+
 .title{
     font-size: 2em;
     padding-top: 20px; 
@@ -93,7 +99,7 @@ a, a:hover{
 
 @-webkit-keyframes spinAround {
     from {
-        -webkit-transform: rotate(0deg)
+        -webkit-transform: rotate(0deg);
     }
     to {
         -webkit-transform: rotate(360deg);
@@ -101,7 +107,7 @@ a, a:hover{
 }
 @-moz-keyframes spinAround {
     from {
-        -moz-transform: rotate(0deg)
+        -moz-transform: rotate(0deg);
     }
     to {
         -moz-transform: rotate(360deg);
@@ -109,7 +115,7 @@ a, a:hover{
 }
 @keyframes spinAround {
     from {
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
