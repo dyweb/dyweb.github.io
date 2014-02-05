@@ -181,6 +181,10 @@ a, a:hover{
     width: 96px;
 }
 
+.member rt {
+    font-size: 80%;
+}
+
 .contract{
     display: table;
     text-align: center;
