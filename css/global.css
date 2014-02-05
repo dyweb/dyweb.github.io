@@ -129,13 +129,31 @@ a, a:hover{
 }
 
 .contribute p{
-    -webkit-transition: -webkit-transform 0.3s;
+    -webkit-transform-origin: 0 center;
+    -moz-transform-origin: 0 center;
+    transform-origin: 0 center;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.contribute .title {
+    text-shadow: 0 0 10px #fff;
 }
 
 .contribute p:hover{
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+
     text-shadow: 0 0 10px #fff;
+}
+
+.contribute p.title:hover{
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
 }
 
 .member{
