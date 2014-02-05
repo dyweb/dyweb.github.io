@@ -118,6 +118,7 @@ a, a:hover{
 
 .contribute{
     background: url("../img/tree.png") no-repeat 0% 100% #3498db;
+    background-size: 30% auto;
     display: table;
     font-size: 2em;
     color: #fff;
