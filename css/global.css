@@ -228,6 +228,7 @@ a, a:hover{
 }
 
 .contract .rightText{
+    padding-top: 30px;
     text-align: left;
     font-size: 2em;
     font-family: 黑体, 文泉驿等宽微米黑, Consolas, monaco, monospace;
