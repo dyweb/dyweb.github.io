@@ -233,6 +233,19 @@ a, a:hover{
     margin: 0 auto;
 }
 
+@media (max-width: 991px) {
+    .contract .leftImage {
+        display: none;
+    }
+
+    .contract .rightText {
+        width: auto;
+        margin: 0 auto;
+        float: none;
+        display: inline-block;
+    }
+}
+
 .contract .rightText{
     padding-top: 30px;
     text-align: left;
