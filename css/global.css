@@ -67,7 +67,7 @@ a, a:hover{
 }
 
 .spirit{
-    background: #2a1744;
+    background: #246aa6;
     color: #fff;
     font-size: 1.2em;
     text-align: center;
@@ -76,6 +76,12 @@ a, a:hover{
 .spiritMain i{
     font-size: 5em;
     margin: 10px;
+}
+
+.active .rotate-me {
+    -webkit-animation: spinAround 6s linear 0s 1;
+    -moz-animation: spinAround 6s linear 0s 1;
+    animation: spinAround 6s linear 0s 1;
 }
 
 .title{
@@ -93,7 +99,7 @@ a, a:hover{
 
 @-webkit-keyframes spinAround {
     from {
-        -webkit-transform: rotate(0deg)
+        -webkit-transform: rotate(0deg);
     }
     to {
         -webkit-transform: rotate(360deg);
@@ -101,7 +107,7 @@ a, a:hover{
 }
 @-moz-keyframes spinAround {
     from {
-        -moz-transform: rotate(0deg)
+        -moz-transform: rotate(0deg);
     }
     to {
         -moz-transform: rotate(360deg);
@@ -109,7 +115,7 @@ a, a:hover{
 }
 @keyframes spinAround {
     from {
-        transform: rotate(0deg)
+        transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
@@ -118,6 +124,7 @@ a, a:hover{
 
 .contribute{
     background: url("../img/tree.png") no-repeat 0% 100% #3498db;
+    background-size: 30% auto;
     display: table;
     font-size: 2em;
     color: #fff;
@@ -129,13 +136,31 @@ a, a:hover{
 }
 
 .contribute p{
-    -webkit-transition: -webkit-transform 0.3s;
+    -webkit-transform-origin: 0 center;
+    -moz-transform-origin: 0 center;
+    transform-origin: 0 center;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.contribute .title {
+    text-shadow: 0 0 10px #fff;
 }
 
 .contribute p:hover{
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+
     text-shadow: 0 0 10px #fff;
+}
+
+.contribute p.title:hover{
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
 }
 
 .member{
@@ -181,6 +206,10 @@ a, a:hover{
     width: 96px;
 }
 
+.member rt {
+    font-size: 80%;
+}
+
 .contract{
     display: table;
     text-align: center;
@@ -204,10 +233,24 @@ a, a:hover{
     margin: 0 auto;
 }
 
+@media (max-width: 991px) {
+    .contract .leftImage {
+        display: none;
+    }
+
+    .contract .rightText {
+        width: auto;
+        margin: 0 auto;
+        float: none;
+        display: inline-block;
+    }
+}
+
 .contract .rightText{
+    padding-top: 30px;
     text-align: left;
     font-size: 2em;
-    font-family: 黑体;
+    font-family: 黑体, 文泉驿等宽微米黑, Consolas, monaco, monospace;
 }
 
 .contract .rightText .special{
