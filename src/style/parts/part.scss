@@ -1,0 +1,26 @@
+@import '../color.scss';
+
+.part {
+  text-align: center;
+  padding-top: 48px;
+
+  /* Part Header */
+  h2 {
+    font-size: 60px;
+
+    /* Part Header Subtitle */
+    &+p {
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+  }
+
+  color: $COLOR_STROM;
+  &.white { color: white; }
+
+}
+
+.large {
+  font-size: 1.6em;
+  line-height: 1.6em;
+}

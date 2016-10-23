@@ -1,0 +1,83 @@
+@import '../color.scss';
+
+.cases {
+  height: 1085px;
+  background-color: white;
+
+  font-size: 24px;
+}
+
+#J_Cases {
+  height: 1000px;
+  width: 1200px;
+  margin: auto;
+
+  & > .galls > .gall {
+    height: 800px;
+  }
+
+  .sample {
+    position: relative; /* for image space */
+    float: left;
+    width: 820px;
+    height: 571px;
+
+    img {
+      display: block;
+      @include float-center();
+
+      height: 571px;
+      box-shadow: 0 0 20px #ccc;
+
+      /* Animation Effects */
+      opacity: 0;
+      @include transition(opacity .3s ease-in-out);
+
+      &.active {
+        opacity: 1;
+        @include transition-delay(.3s);
+      }
+    }
+  }
+
+  .galls-container {
+    float: left;
+    width: 380px;
+    height: 400px;
+  }
+
+  .selection-container {
+    float: left;
+    width: 380px;
+    height: 60px;
+  }
+
+  .title {
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .description {
+    font-size: 30px;
+    color: #7b7a7b;
+    margin: 1em;
+  }
+
+  .btn {
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 48px;
+    border-radius: 8px;
+  }
+
+  & > .galls {
+    $colors: ($COLOR_BLUE, $COLOR_RED, $COLOR_ORANGE);
+    @for $i from 1 through 3 {
+      & > :nth-of-type(#{$i}) {
+        .title { color: nth($colors, $i); }
+        .btn { background-color: nth($colors, $i); }
+      }
+    }
+  }
+}

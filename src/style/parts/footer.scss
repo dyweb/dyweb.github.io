@@ -1,0 +1,43 @@
+@import '../color.scss';
+
+.footer {
+  height: 390px;
+  background-color: $COLOR_DOUGLAS;
+
+  .banner {
+    width: 440px;
+    box-sizing: border-box;
+    margin: auto;
+    background-image: url('/img/logo.svg');
+    background-repeat: no-repeat;
+    background-size: 116px;
+    padding-left: 77px;
+
+    h3 { font-size: 48px; }
+    p { font-size: 28px; }
+  }
+
+  .sub-banner {
+    //max-width: 1600px;
+    width: 90%;
+    margin: auto;
+    padding-top: 36px;
+    padding-bottom: 48px;
+    color: $COLOR_FOG;
+    font-size: 30px;
+    border-bottom: 1px solid $COLOR_GRAY;
+  }
+
+  .contact {
+    margin-top: 24px;
+    box-sizing: border-box;
+    padding: 18px;
+    font-size: 24px;
+    line-height: 36px;
+    width: 50%;
+    float: left;
+    &.left { text-align: right; }
+    &.right { text-align: left; }
+  }
+
+}
