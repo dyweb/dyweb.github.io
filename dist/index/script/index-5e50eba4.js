@@ -183,7 +183,7 @@ $(document).ready(function () {
       'Android 组',
       'iOS 组',
       '设计组',
-      'Open-Class Community 组',
+      'MOOC & Open Source  组',
       '呃... and more...'
     ][index]);
   });
