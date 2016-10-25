@@ -393,11 +393,13 @@ th {
 /**** Transform *************************************************************************/
 /***** Transition ***********************************************************************/
 /***** Centering ************************************************************************/
+/***** Animation ************************************************************************/
 /**** Background Images *****************************************************************/
 /**** Circle ****************************************************************************/
 /**** Transform *************************************************************************/
 /***** Transition ***********************************************************************/
 /***** Centering ************************************************************************/
+/***** Animation ************************************************************************/
 .icon {
   margin: auto;
 }
@@ -544,6 +546,84 @@ th {
   top: 5px;
 }
 
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    bottom: 0;
+    margin-left: 0;
+    opacity: 0.9;
+    width: 0;
+    height: 0;
+    border-radius: 0;
+  }
+  67% {
+    bottom: -342px;
+    margin-left: -342px;
+    opacity: 0;
+    width: 684px;
+    height: 684px;
+    border-radius: 342px;
+  }
+  100% {
+    bottom: 0;
+    margin-left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    bottom: 0;
+    margin-left: 0;
+    opacity: 0.9;
+    width: 0;
+    height: 0;
+    border-radius: 0;
+  }
+  67% {
+    bottom: -342px;
+    margin-left: -342px;
+    opacity: 0;
+    width: 684px;
+    height: 684px;
+    border-radius: 342px;
+  }
+  100% {
+    bottom: 0;
+    margin-left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 0;
+  }
+}
+
 .border p {
   position: relative;
 }
@@ -620,6 +700,7 @@ th {
 /**** Transform *************************************************************************/
 /***** Transition ***********************************************************************/
 /***** Centering ************************************************************************/
+/***** Animation ************************************************************************/
 .selection {
   height: 42px;
   position: relative;
@@ -740,6 +821,7 @@ th {
 /**** Transform *************************************************************************/
 /***** Transition ***********************************************************************/
 /***** Centering ************************************************************************/
+/***** Animation ************************************************************************/
 .logo {
   background-image: url("/img/logo.svg");
   background-repeat: no-repeat;
@@ -793,7 +875,9 @@ th {
   bottom: 24px;
 }
 
-.jumbotron .arrow, .jumbotron .arrow:before, .jumbotron .arrow:after {
+.jumbotron .arrow > span, .jumbotron .arrow:before, .jumbotron .arrow:after {
+  opacity: 0;
+  /* Animation preset */
   background-image: url("/img/arrow_down.png");
   background-repeat: no-repeat;
   background-size: 49px 14px;
@@ -815,6 +899,58 @@ th {
   top: 12px;
 }
 
+.jumbotron .arrow:before {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: blink;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-duration: 1.5s;
+  animation-name: blink;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.jumbotron .arrow > span {
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: blink;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-name: blink;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  display: block;
+}
+
+.jumbotron .arrow:after {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: blink;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+  animation-name: blink;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 .jumbotron .circle {
   position: absolute;
   left: 50%;
@@ -824,60 +960,77 @@ th {
 }
 
 .jumbotron .circle.circle-tiny {
-  bottom: -113px;
-  margin-left: -113px;
-  opacity: 0.75;
-  width: 226px;
-  height: 226px;
-  border-radius: 113px;
-  -webkit-transition: bottom 0.45s ease-in-out, margin-left 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, border-radius 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  -moz-transition: bottom 0.45s ease-in-out, margin-left 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, border-radius 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  -o-transition: bottom 0.45s ease-in-out, margin-left 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, border-radius 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  transition: bottom 0.45s ease-in-out, margin-left 0.45s ease-in-out, width 0.45s ease-in-out, height 0.45s ease-in-out, border-radius 0.45s ease-in-out, opacity 0.45s ease-in-out;
-  -webkit-transition-delay: 0.9s;
-  -moz-transition-delay: 0.9s;
-  -o-transition-delay: 0.9s;
-  transition-delay: 0.9s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: circle;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-name: circle;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .jumbotron .circle.circle-small {
-  bottom: -226px;
-  margin-left: -226px;
-  opacity: 0.5;
-  width: 452px;
-  height: 452px;
-  border-radius: 226px;
-  -webkit-transition: bottom 0.9s ease-in-out, margin-left 0.9s ease-in-out, width 0.9s ease-in-out, height 0.9s ease-in-out, border-radius 0.9s ease-in-out, opacity 0.9s ease-in-out;
-  -moz-transition: bottom 0.9s ease-in-out, margin-left 0.9s ease-in-out, width 0.9s ease-in-out, height 0.9s ease-in-out, border-radius 0.9s ease-in-out, opacity 0.9s ease-in-out;
-  -o-transition: bottom 0.9s ease-in-out, margin-left 0.9s ease-in-out, width 0.9s ease-in-out, height 0.9s ease-in-out, border-radius 0.9s ease-in-out, opacity 0.9s ease-in-out;
-  transition: bottom 0.9s ease-in-out, margin-left 0.9s ease-in-out, width 0.9s ease-in-out, height 0.9s ease-in-out, border-radius 0.9s ease-in-out, opacity 0.9s ease-in-out;
-  -webkit-transition-delay: 0.45s;
-  -moz-transition-delay: 0.45s;
-  -o-transition-delay: 0.45s;
-  transition-delay: 0.45s;
+  -webkit-animation-delay: 0.75s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: circle;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-delay: 0.75s;
+  animation-duration: 3s;
+  animation-name: circle;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .jumbotron .circle.circle-normal {
-  bottom: -342px;
-  margin-left: -342px;
-  opacity: 0.25;
-  width: 684px;
-  height: 684px;
-  border-radius: 342px;
-  -webkit-transition: bottom 1.35s ease-in-out, margin-left 1.35s ease-in-out, width 1.35s ease-in-out, height 1.35s ease-in-out, border-radius 1.35s ease-in-out, opacity 1.35s ease-in-out;
-  -moz-transition: bottom 1.35s ease-in-out, margin-left 1.35s ease-in-out, width 1.35s ease-in-out, height 1.35s ease-in-out, border-radius 1.35s ease-in-out, opacity 1.35s ease-in-out;
-  -o-transition: bottom 1.35s ease-in-out, margin-left 1.35s ease-in-out, width 1.35s ease-in-out, height 1.35s ease-in-out, border-radius 1.35s ease-in-out, opacity 1.35s ease-in-out;
-  transition: bottom 1.35s ease-in-out, margin-left 1.35s ease-in-out, width 1.35s ease-in-out, height 1.35s ease-in-out, border-radius 1.35s ease-in-out, opacity 1.35s ease-in-out;
-  -webkit-transition-delay: 0;
-  -moz-transition-delay: 0;
-  -o-transition-delay: 0;
-  transition-delay: 0;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: circle;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+  animation-name: circle;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.jumbotron .circle.circle-fade {
+.jumbotron .circle.circle-large {
+  -webkit-animation-delay: 2.25s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: circle;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-delay: 2.25s;
+  animation-duration: 3s;
+  animation-name: circle;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.jumbotron .circle {
   bottom: 0;
   margin-left: 0;
-  opacity: 0.1;
+  opacity: 0;
   width: 0;
   height: 0;
   border-radius: 0;
@@ -996,7 +1149,10 @@ th {
 }
 
 .album img {
+  margin-bottom: 8px;
+  width: 202px;
   height: 202px;
+  border-radius: 101px;
 }
 
 #J_Teams {
@@ -1162,7 +1318,7 @@ th {
   margin: auto;
   background-image: url("/img/logo.svg");
   background-repeat: no-repeat;
-  background-size: 116px;
+  background-size: 116px 116px;
   padding-left: 100px;
 }
 
@@ -1210,7 +1366,7 @@ th {
 }
 
 .copyright p {
-  width: 95%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 24px;
