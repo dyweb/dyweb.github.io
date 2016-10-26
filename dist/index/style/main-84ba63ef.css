@@ -588,12 +588,12 @@ th {
     border-radius: 342px;
   }
   100% {
-    bottom: -342px;
-    margin-left: -342px;
+    bottom: 0;
+    margin-left: 0;
     opacity: 0;
-    width: 684px;
-    height: 684px;
-    border-radius: 342px;
+    width: 0;
+    height: 0;
+    border-radius: 0;
   }
 }
 
@@ -615,12 +615,12 @@ th {
     border-radius: 342px;
   }
   100% {
-    bottom: -342px;
-    margin-left: -342px;
+    bottom: 0;
+    margin-left: 0;
     opacity: 0;
-    width: 684px;
-    height: 684px;
-    border-radius: 342px;
+    width: 0;
+    height: 0;
+    border-radius: 0;
   }
 }
 
@@ -1314,16 +1314,18 @@ th {
 
 .footer .banner {
   width: 440px;
+  height: 110px;
   box-sizing: border-box;
   margin: auto;
   background-image: url("/img/logo.svg");
   background-repeat: no-repeat;
-  background-size: 116px;
+  background-size: 116px 116px;
   padding-left: 100px;
 }
 
 .footer .banner h3 {
   font-size: 48px;
+  line-height: 64px;
 }
 
 .footer .banner p {
@@ -1384,4 +1386,8 @@ th {
 * {
   font-family: 'Lato', Arial, 'Source Han Sans CN', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
   font-weight: 300;
+}
+
+body {
+  min-width: 1200px;
 }
