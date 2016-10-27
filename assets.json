@@ -1,0 +1,32 @@
+{
+  "src": "src",
+  "dist": "dist",
+  "www": "./",
+  "linked": "linked.json",
+  "option": {
+    // "mode": ["compress", 2],
+    "mode": ["copy", 1],
+    "hash": [8, 2]
+  },
+  "plugins": {
+    "tam-html": {
+      "src": ["./src/index.html"],
+      "dest": "./"
+    }
+  },
+  "packages": {
+    "jquery": {
+      "option": {"mode": ["copy", 100]},
+      "src": "../node_modules/jquery/dist",
+      "files": ["jquery.min.js"]
+    },
+    "index": {
+      "src": ".",
+      "dependencies": ["jquery"],
+      "files": [
+        "script/index.js",
+        "style/main.scss"
+      ]
+    }
+  }
+}

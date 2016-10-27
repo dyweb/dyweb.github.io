@@ -1,0 +1,157 @@
+@import '../util.scss';
+
+.logo {
+  @include background-image('/img/logo.svg', 62px, 62px);
+  background-position: 0 -6px;
+}
+
+.jumbotron {
+  z-index: 1;
+  position: relative;
+
+  height: 760px;
+  box-sizing: border-box;
+  padding-top: 20px;
+
+  text-align: center;
+
+  &:before {
+    content: ' ';
+    z-index: -2;
+    position: absolute;
+    //@include background-image-fit('/img/bg.png', 1600px, 822px);
+    @include background-image-cover('/img/bg.png', 100%, 822px);
+    left: 50%;
+    margin-left: -50%;
+    top: 0;
+  }
+
+  overflow: hidden;
+
+  &:after {
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+  }
+
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -24px;
+    bottom: 24px;
+    text-decoration: none;
+    
+    & > span, &:before, &:after {
+      opacity: 0;  /* Animation preset */
+      @include background-image-fit('/img/arrow_down.png', 49px, 14px);
+    }
+    &:before, &:after {
+      position: absolute;
+      content: ' ';
+      left: 0;
+    }
+    &:before { top: -12px; }
+    &:after { top: 12px; }
+
+    // Animation effects
+    &:before { @include animation-loop(0s,  1.5s, blink, ease-in-out); }
+    & > span { @include animation-loop(.5s, 1.5s, blink, ease-in-out); display: block; }
+    &:after  { @include animation-loop(1s,  1.5s, blink, ease-in-out); }
+  }
+
+  .circle {
+    position: absolute;
+    left: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    
+    // Transition effects
+    @mixin circle-transition($time, $delay) {
+      @include transition(
+        bottom $time ease-in-out, 
+        margin-left $time ease-in-out, 
+        width $time ease-in-out, 
+        height $time ease-in-out, 
+        border-radius $time ease-in-out,
+        opacity $time ease-in-out);
+      @include transition-delay($delay);
+    }
+
+    //&.circle-tiny   { @include semi-circle(113px, .75); @include circle-transition(.45s, .9s); }
+    //&.circle-small  { @include semi-circle(226px, .5); @include circle-transition(.9s, .45s); }
+    //&.circle-normal { @include semi-circle(342px, .25); @include circle-transition(1.35s, 0); }
+    //&.circle-large  { @include semi-circle(450px, .2); @include circle-transition(1.8s, 0); }
+
+    // Animation effects
+    &.circle-tiny   { @include animation-loop(0s, 3s, circle, linear); }
+    &.circle-small  { @include animation-loop(.75s, 3s, circle, linear); }
+    &.circle-normal { @include animation-loop(1.5s, 3s, circle, linear); }
+    &.circle-large { @include animation-loop(2.25s, 3s, circle, linear); }
+
+    // Animation presets
+    & {
+      bottom: 0;
+      margin-left: 0;
+      opacity: 0;
+      @include circle(0);
+    }
+  }
+
+  .top {
+    z-index: 3;
+
+    width: 41.25%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    li {
+      float: left;
+      width: 16.6%;
+      height: 50px;
+
+      line-height: 50px;
+
+      color: white;
+
+      font-size: 18px;
+    }
+
+    &:after {
+      content: ' ';
+      clear: both;
+      display: table;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+
+  h1 {
+    color: white;
+    font-size: 90px;
+    margin: 0.8em 0 0.1em;
+  }
+
+  p {
+    font-size: 64px;
+    color: white;
+    span {
+      font-size: 54px;
+      color: #e50045;
+    }
+  }
+
+}

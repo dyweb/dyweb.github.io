@@ -1,0 +1,77 @@
+@import '../color.scss';
+@import '../util.scss';
+
+.selection {
+
+  height: 42px;
+  position: relative;
+  margin-bottom: 65px;
+
+  .item {
+    cursor: pointer;
+    position: absolute;
+    top: 21px;
+    left: 50%;
+
+    @mixin circle-pos-heart($r) {
+      content: ' ';
+      position: absolute;
+      left: -$r;
+      top: -$r;
+      @include circle($r);
+    }
+
+    &:before        { @include circle-pos-heart(8px); }
+    &:hover:before  { @include circle-pos-heart(10px); }
+    &.active:before { @include circle-pos-heart(12px); }
+
+    &:first-child:before  { background-color: $COLOR_BLUE;     }
+    &:nth-child(2):before { background-color: $COLOR_RED;      }
+    &:nth-child(3):before { background-color: $COLOR_ORANGE;   }
+    &:nth-child(4):before { background-color: $COLOR_LIVIDITY; }
+    &:nth-child(5):before { background-color: $COLOR_PURPLE;   }
+    &:nth-child(6):before { background-color: $COLOR_STROM;   }
+
+  }
+
+  $ARROW_HEIGHT: 64px;
+
+  .arrow-contain {
+    width: 90%;
+    height: $ARROW_HEIGHT;
+    border-bottom: 1px solid $COLOR_SHADOWY;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .arrow-self {
+    @include skew(-45,45);
+    @include transform-origin(top left);
+    position: absolute;
+    left: 50%;
+    top: $ARROW_HEIGHT - 15px;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-left: 1px solid $COLOR_SHADOWY;
+    border-top: 1px solid $COLOR_SHADOWY;
+  }
+
+}
+
+.galls-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.galls {
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include transition(left 0.6s);
+}
+
+.gall {
+  float: left;
+}

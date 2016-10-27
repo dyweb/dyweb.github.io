@@ -1,0 +1,27 @@
+@include keyframe(blink) {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  66% {
+    opacity: 0;
+  }
+}
+
+@include keyframe(circle) {
+  0% {
+    @include semi-circle(0, .9);
+  }
+
+  67% {
+    @include semi-circle(342px, 0);
+  }
+
+  100% {
+    @include semi-circle(0, 0);
+  }
+}

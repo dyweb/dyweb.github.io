@@ -1,0 +1,37 @@
+@import './util.scss';
+
+.icon {
+  margin: auto;
+}
+
+@mixin icon($url, $width, $height, $padding-top: 0) {
+  position: relative;
+  width: $width;
+  height: $height;
+  display: inline-block;
+  &:after {
+    content: ' ';
+    position: absolute;
+    @include background-image($url, $width, $height);
+    width: $width;
+    height: $height + $padding-top;
+    left: 0;
+    top: $padding-top;
+  }
+}
+
+.icon-human     { @include background-image-fit('/img/users.png',     107px, 110px); }
+.icon-lightning { @include background-image-fit('/img/lightning.png',  76px, 110px); }
+.icon-earth     { @include background-image-fit('/img/earth.png',     110px, 110px); }
+.icon-compass   { @include background-image-fit('/img/discover.png',  110px, 110px); }
+.icon-bin       { @include background-image-fit('/img/trash.png',      87px, 110px); }
+.icon-memo      { @include background-image-fit('/img/file.png',       82px, 110px); }
+.icon-screen    { @include background-image-fit('/img/computer.png',  148px, 110px); }
+.icon-pad       { @include background-image-fit('/img/pad.png',       108px, 110px); }
+.icon-mobile    { @include background-image-fit('/img/phone.png',      62px, 110px); }
+.icon-chrome    { @include background-image-fit('/img/web.png',       100px, 100px); }
+.icon-apple     { @include background-image-fit('/img/ios.png',        83px, 100px); }
+.icon-android   { @include background-image-fit('/img/android.png',    85px, 100px); }
+.icon-grid      { @include background-image-fit('/img/other.png',     101px, 100px); }
+.icon-mail      { @include icon('/img/email.png',    42px, 28px, 6px); }
+.icon-map       { @include icon('/img/location.png', 25px, 28px, 5px); }

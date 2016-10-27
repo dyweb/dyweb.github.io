@@ -1,0 +1,25 @@
+#!/bin/bash
+
+local BUILD_BRANCH='gh-pages'
+local BUILD_COMMAND='npm run build'
+local BUILD_PATH='dist index.html'
+local BUILD_COMMIT_TITLE='build'
+
+local CURRENT_BRANCH=$(git branch | grep --color=never '^\* ' | cut -d' ' -f 2)
+
+local ADD_BUILD_COMMAND="git add -f ${BUILD_PATH}"
+
+# Switch to the build branch
+git branch -D ${BUILD_BRANCH}
+git checkout -b ${BUILD_BRANCH}
+
+# Build, commit, push
+eval ${BUILD_COMMAND}
+eval ${ADD_BUILD_COMMAND}
+git commit -m ${BUILD_COMMIT_TITLE}
+git push -f origin ${BUILD_BRANCH}
+
+# Switch back and clean up
+git checkout ${CURRENT_BRANCH}
+git branch -D ${BUILD_BRANCH}
+eval ${BUILD_COMMAND}

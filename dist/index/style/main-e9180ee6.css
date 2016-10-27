@@ -873,6 +873,7 @@ th {
   left: 50%;
   margin-left: -24px;
   bottom: 24px;
+  text-decoration: none;
 }
 
 .jumbotron .arrow > span, .jumbotron .arrow:before, .jumbotron .arrow:after {

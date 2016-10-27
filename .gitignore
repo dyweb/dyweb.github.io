@@ -1,0 +1,19 @@
+#### Generated files ####################
+# Compiled files
+#/dist/
+#/index.html
+/linked.json
+
+# Log
+*.log
+
+# Node
+node_modules
+npm-debug.log.*
+
+#### Env-related ########################
+# Mac
+.DS_Store
+
+# PHPStorm
+.idea

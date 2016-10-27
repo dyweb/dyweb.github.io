@@ -1,0 +1,33 @@
+@import './normalize.scss';
+@import './color.scss';
+@import './util.scss';
+@import './icon.scss';
+@import './animation.scss';
+
+@import './components/border.scss';
+@import './components/panel.scss';
+@import './components/selection.scss';
+
+@import './parts/jumbotron.scss';
+
+@import './parts/part.scss';
+@import './parts/about.scss';
+@import './parts/team.scss';
+@import './parts/cases.scss';
+@import './parts/consultation.scss';
+@import './parts/footer.scss';
+@import './parts/copyright.scss';
+
+
+// @import './fonts.scss';
+
+* {
+  font-family: 'Lato', Arial, 'Source Han Sans CN', 'Hiragino Sans GB',
+               'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  min-width: 1200px;
+}
+
