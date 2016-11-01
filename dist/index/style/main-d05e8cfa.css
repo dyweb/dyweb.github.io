@@ -1081,6 +1081,10 @@ th {
   color: #e50045;
 }
 
+.wrap {
+  margin-top: 60px;
+}
+
 .part {
   text-align: center;
   padding-top: 48px;
@@ -1382,6 +1386,32 @@ th {
   font-size: 16px;
   color: #aaa;
   text-decoration: none;
+}
+
+.recruit {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f29419;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #ba6e0b;
+}
+
+.recruit a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+.recruit a:hover, .recruit a:focus {
+  color: #ffd39b;
 }
 
 * {
