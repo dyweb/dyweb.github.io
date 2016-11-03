@@ -1085,6 +1085,10 @@ th {
   color: #e50045;
 }
 
+.wrap {
+  margin-top: 60px;
+}
+
 .part {
   text-align: center;
   padding-top: 48px;
