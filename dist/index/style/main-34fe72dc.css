@@ -1043,7 +1043,7 @@ th {
 
 .jumbotron .top {
   z-index: 3;
-  width: 41.25%;
+  width: 46%;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -1051,7 +1051,7 @@ th {
 
 .jumbotron .top li {
   float: left;
-  width: 16.6%;
+  width: 14.28%;
   height: 50px;
   line-height: 50px;
   color: white;
