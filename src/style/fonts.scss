@@ -1,11 +1,13 @@
-/* MyriadProRegular */
+/* lato-normal - latin */
 @font-face {
-    font-family: 'MyriadProRegular';
-    src: url('https://aon-cdn.googlecode.com/files/myriadpro-regular_0.eot');
-    src: url('https://aon-cdn.googlecode.com/files/myriadpro-regular_0.eot') format('embedded-opentype'),
-         url('https://aon-cdn.googlecode.com/files/myriadpro-regular_0.woff') format('woff'),
-         url('https://aon-cdn.googlecode.com/files/myriadpro-regular_0.ttf') format('truetype'),
-         url('https://aon-cdn.googlecode.com/files/myriadpro-regular_0.svg#MyriadProRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//lib.baomitu.com/fonts/lato/lato-v13-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Lato'), local('Lato-Normal'),
+       url('//lib.baomitu.com/fonts/lato/lato-v13-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/lato/lato-v13-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/lato/lato-v13-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/lato/lato-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/lato/lato-v13-latin-300.svg#Lato') format('svg'); /* Legacy iOS */
 }

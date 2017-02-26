@@ -1419,6 +1419,17 @@ th {
   color: #ffd39b;
 }
 
+/* lato-normal - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url("//lib.baomitu.com/fonts/lato/lato-v13-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Lato"), local("Lato-Normal"), url("//lib.baomitu.com/fonts/lato/lato-v13-latin-300.eot?#iefix") format("embedded-opentype"), url("//lib.baomitu.com/fonts/lato/lato-v13-latin-300.woff2") format("woff2"), url("//lib.baomitu.com/fonts/lato/lato-v13-latin-300.woff") format("woff"), url("//lib.baomitu.com/fonts/lato/lato-v13-latin-300.ttf") format("truetype"), url("//lib.baomitu.com/fonts/lato/lato-v13-latin-300.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
 * {
   font-family: 'Lato', Arial, 'Source Han Sans CN', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
   font-weight: 300;
