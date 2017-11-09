@@ -27,7 +27,7 @@ about:
     title: Talent Growth Platform for SJTU Geekers
     human: Growth
     lightning: Innovation
-    earth: Collbration
+    earth: Collaboration
   training:
     title: Diverse Training Approaches
     compass: Instruction
@@ -98,13 +98,13 @@ cases:
     name: Website
     tongqu:
       name: Tongqu
-      desc: Popular event platform of SJTU
+      desc: Popular Event Platform of SJTU
     aixinwu:
       name: Aixinwu
       desc: SJTU Donation Platform
     electsys:
       name: Electsys++
-      desc: Optimization plugin for Electsys
+      desc: Optimization Plugin for Electsys
     junxun:
       name: Freshman Junxun Website
       desc: Official Platform of SJTU Military Training
@@ -115,7 +115,7 @@ cases:
     name: Android App
     tongqu:
       name: Tongqu
-      desc: Popular event platform of SJTU
+      desc: Popular Event Platform of SJTU
     crossy:
       name: Crossy
       desc: 'SJTU Life Assistant'
@@ -123,7 +123,7 @@ cases:
     name: iOS App
     tongqu:
       name: iTongqu
-      desc: Popular event platform of SJTU
+      desc: Popular Event Platform of SJTU
 
 consultation:
   title: Our Services
