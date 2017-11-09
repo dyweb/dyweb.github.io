@@ -30,12 +30,17 @@
     "gulp-uglify": "^1.4.1",
     "jquery": "2.1.4",
     "tam": "0.4.2",
-    "tam-html": "0.2.0"
+    "tam-html": "0.2.0",
+    "tam-i18n": "0.1.0"
   },
   "config": {
     "ghooks": {
       "pre-commit": "npm test",
       "post-merge": "npm run build"
     }
+  },
+  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "tam-i18n": "^0.2.0"
   }
 }

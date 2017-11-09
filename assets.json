@@ -9,8 +9,14 @@
     "hash": [8, 2]
   },
   "plugins": {
-    "tam-html": {
+    "tam-i18n": {
       "src": ["./src/index.html"],
+      "dest": "./lang",
+      "langDir": "./lang",
+      "fallback": "zh-CN"
+    },
+    "tam-html": {
+      "src": ["./lang/*.html"],
       "dest": "./"
     }
   },

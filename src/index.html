@@ -2,30 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>东岳网络工作室 | Dongyue Studio</title>
+  <title>${{ index.title.dongyue }}$</title>
   <link rel="icon" href="/img/logo.png" sizes="128x128" type="image/png">
   <link rel="apple-touch-icon" href="/img/logo.png">
 
+  <link rel="stylesheet" href="https://fonts.font.im/css?family=Lato">
   <link rel="stylesheet" href="@tam/index">
 
   <meta name="theme-color" content="#0f75ad">
-  <meta name="keywords" content="东岳,工作室,同去,上海交大,交大,校园,互联网">
-  <meta name="description" content="东岳网络工作室是由交大学生成立的互联网产品开发工作室，是目前交大规模最大最专业的学生技术组织，为学校、学院、学生组织提供丰富的网络产品开发服务，让交大师生的工作、学习、生活变得更高效、更便捷。">
+  <meta name="keywords" content="${{ index.title.keywords }}$">
+  <meta name="description" content="${{ index.title.description }}$">
 </head>
 <body>
   <div class="wrap">
     <div class="jumbotron">
       <ul class="top">
         <li class="logo"></li>
-        <li><a href="#">首页</a></li>
-        <li><a href="#part-about">关于我们</a></li>
-        <li><a href="#part-team">团队</a></li>
-        <li><a href="#part-cases">案例</a></li>
-        <li><a href="#part-consultation">合作咨询</a></li>
-        <li><a href="http://blog.dongyueweb.com" target="_blank">博客</a></li>
+        <li><a href="#">${{ index.part.index }}$</a></li>
+        <li><a href="#part-about">${{ index.part.about }}$</a></li>
+        <li><a href="#part-team">${{ index.part.team }}$</a></li>
+        <li><a href="#part-cases">${{ index.part.cases }}$</a></li>
+        <li><a href="#part-consultation">${{ index.part.consultation }}$</a></li>
+        <li><a href="http://blog.dongyueweb.com" target="_blank">${{ index.part.blog }}$</a></li>
       </ul>
-      <h1>东岳网络工作室</h1>
-      <p>Dongyue Studio<!--. <span class="purple">设计组</span>--></p>
+      <h1>${{ index.dongyue.name }}$</h1>
+      <p>${{ index.dongyue.sub }}$<!--. <span class="purple">设计组</span>--></p>
       <a class="arrow" href="#part-about">
         <span>&nbsp;</span>
       </a>
@@ -35,38 +36,38 @@
       <div class="circle circle-large"></div>
     </div>
     <div class="part about">
-      <h2 id="part-about">关于我们</h2>
-      <p>About us</p>
+      <h2 id="part-about">${{ index.part.about }}$</h2>
+      <p>${{ index.part.about_en }}$</p>
       <div class="selection arrow" data-count="3" data-selector="#J_Intro"></div>
       <div class="galls-container" id="J_Intro">
         <div class="galls">
           <div class="gall">
             <div class="border three blue">
-              <p>我们致力于在交大校园内打造一个优秀的互联网人才成长平台</p>
+              <p>${{ index.about.platform.title }}$</p>
               <ul>
-                <li><div class="icon icon-human"></div>我们关注人的成长</li>
-                <li><div class="icon icon-lightning"></div>我们相信自由和创新的精神</li>
-                <li><div class="icon icon-earth"></div>我们鼓励更多的沟通与协作</li>
+                <li><div class="icon icon-human"></div>${{ index.about.platform.human }}$</li>
+                <li><div class="icon icon-lightning"></div>${{ index.about.platform.lightning }}$</li>
+                <li><div class="icon icon-earth"></div>${{ index.about.platform.earth }}$</li>
               </ul>
             </div>
           </div>
           <div class="gall">
             <div class="border three red">
-              <p>我们致力于探索不同的人才培养方式</p>
+              <p>${{ index.about.training.title }}$</p>
               <ul>
-                <li><div class="icon icon-compass"></div>提供完整的指导体系</li>
-                <li><div class="icon icon-bin"></div>定期聚会交流分享</li>
-                <li><div class="icon icon-memo"></div>通过项目锻炼成员</li>
+                <li><div class="icon icon-compass"></div>${{ index.about.training.compass }}$</li>
+                <li><div class="icon icon-bin"></div>${{ index.about.training.bin }}$</li>
+                <li><div class="icon icon-memo"></div>${{ index.about.training.memo }}$</li>
               </ul>
             </div>
           </div>
           <div class="gall">
             <div class="border three orange">
-              <p>我们致力于提供优秀的互联网产品开发服务</p>
+              <p>${{ index.about.service.title }}$</p>
               <ul>
-                <li><div class="icon icon-screen"></div>跨平台的开发服务</li>
-                <li><div class="icon icon-pad"></div>完整的开发流程</li>
-                <li><div class="icon icon-mobile"></div>专业的合作态度</li>
+                <li><div class="icon icon-screen"></div>${{ index.about.service.screen }}$</li>
+                <li><div class="icon icon-pad"></div>${{ index.about.service.pad }}$</li>
+                <li><div class="icon icon-mobile"></div>${{ index.about.service.mobile }}$</li>
               </ul>
             </div>
           </div>
@@ -74,16 +75,16 @@
       </div>
     </div>
     <div class="part team">
-      <h2 id="part-team">团队</h2>
-      <p>Team</p>
+      <h2 id="part-team">${{ index.part.team }}$</h2>
+      <p>${{ index.part.team_en }}$</p>
       <div class="panel">
-        <p class="large" id="J_TeamName">Web 组</p>
+        <p class="large" id="J_TeamName">${{ index.team.web.name }}$</p>
         <div class="selection arrow" data-count="7" data-selector="#J_Teams"></div>
         <div class="galls-container" id="J_Teams">
           <div class="galls">
             <div class="gall">
-              <p>我们时刻关注着前后端的最新技术</p>
-              <p>Vue.js, NodeJS, MySQL, ...</p>
+              <p>${{ index.team.web.desc1 }}$</p>
+              <p>${{ index.team.web.desc2 }}$</p>
               <div class="galls-container album-box" id="J_TeamWebAlbum">
                 <div class="galls">
                   <div class="gall">
@@ -91,42 +92,42 @@
                       <div>
                         <img src="https://avatars1.githubusercontent.com/u/4508882?v=3&s=303" alt="arrowrowe">
                         <p>arrowrowe</p>
-                        <p>负责人</p>
+                        <p>${{ index.team.web.president }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars3.githubusercontent.com/u/9015818?v=3&s=303" alt="ComMouse">
                         <p>ComMouse</p>
-                        <p>Web 组组长</p>
+                        <p>${{ index.team.web.leader }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars3.githubusercontent.com/u/5630262?v=3&s=303" alt="Sway">
                         <p>Sway</p>
-                        <p>Web 组前组长</p>
+                        <p>${{ index.team.web.former_leader }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars3.githubusercontent.com/u/5621298?v=3&s=303" alt="at15">
                         <p>at15</p>
-                        <p>Web 组前组长</p>
+                        <p>${{ index.team.web.former_leader }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars1.githubusercontent.com/u/8097302?v=3&s=303" alt="xsfour">
                         <p>xsfour</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars2.githubusercontent.com/u/3363954?v=3&s=303" alt="LukeXuan">
                         <p>LukeXuan</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars0.githubusercontent.com/u/11639422?v=3&s=303" alt="bluemit">
                         <p>bluemit</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars1.githubusercontent.com/u/13346473?v=3&s=303" alt="zym">
                         <p>zym</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -135,42 +136,42 @@
                       <div>
                         <img src="https://avatars0.githubusercontent.com/u/8635694?v=3&s=303" alt="EricaHe">
                         <p>EricaHe</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://secure.gravatar.com/avatar/8b17ec02770ea6b55acec3ddca3500d4?s=303&d=identicon" alt="kevinissun">
                         <p>kevinissun</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/41/ed9e5a7e0ba0198ff060b161272ddfd7.jpg" alt="Flyinhigh">
                         <p>Flyinhigh</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://secure.gravatar.com/avatar/d1aec851ca2ee7331d613ee7c98f53dd?s=303&d=identicon" alt="kkksc03">
                         <p>kkksc03</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/72/5034681480f6a.jpg" alt="Adamytd">
                         <p>Adamytd</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/88/33.jpg" alt="RazorQ">
                         <p>RazorQ</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/95/1.jpg" alt="space">
                         <p>space</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="img/avatar/zoeylee.jpg" alt="zoey">
                         <p>zoey</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -179,27 +180,27 @@
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/86/IMG_0099.JPG" alt="gsc">
                         <p>gsc</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars0.githubusercontent.com/u/3047375?v=3&s=303" alt="kdplus">
                         <p>kdplus</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://secure.gravatar.com/avatar/76405cf66231788ccd99a5196317aafd?s=303&d=identicon" alt="feitianlzk">
                         <p>feitianlzk</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/93/c5.jpg?v=3&s=303" alt="DannyJay">
                         <p>DannyJay</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/3/QQ%E5%9B%BE%E7%89%8720150131093804.jpg" alt="daniyuu">
                         <p>daniyuu</p>
-                        <p>Web 组成员</p>
+                        <p>${{ index.team.web.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -208,8 +209,8 @@
               <div class="selection simple" data-count="3" data-selector="#J_TeamWebAlbum"></div>
             </div>
             <div class="gall">
-              <p>少年，我见你脑后冒着绿光</p>
-              <p>跟我学写 Android 吧</p>
+              <p>${{ index.team.android.desc1 }}$</p>
+              <p>${{ index.team.android.desc2 }}$</p>
               <div class="galls-container album-box" id="J_TeamAndroidAlbum">
                 <div class="galls">
                   <div class="gall">
@@ -217,42 +218,42 @@
                       <div>
                         <img src="https://avatars1.githubusercontent.com/u/7195739?v=3&s=303" alt="vinx13">
                         <p>vinx13</p>
-                        <p>Android 组组长</p>
+                        <p>${{ index.team.android.leader }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars3.githubusercontent.com/u/7038881?v=3&s=303" alt="BrotherJing">
                         <p>BrotherJing</p>
-                        <p>Android 组前组长</p>
+                        <p>${{ index.team.android.former_leader }}$</p>
                       </div>
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/3/QQ%E5%9B%BE%E7%89%8720150131093804.jpg" alt="daniyuu">
                         <p>daniyuu</p>
-                        <p>Android 组前组长</p>
+                        <p>${{ index.team.android.former_leader }}$</p>
                       </div>
                       <div>
                         <img src="https://secure.gravatar.com/avatar/558678e6f8a702ed4003ed36aa112187?s=303&d=identicon" alt="ljj">
                         <p>ljj</p>
-                        <p>Android 组成员</p>
+                        <p>${{ index.team.android.member }}$</p>
                       </div>
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/132/_%E5%B0%8F_lookingglass_background.png" alt="MerryMercy">
                         <p>MerryMercy</p>
-                        <p>Android 组成员</p>
+                        <p>${{ index.team.android.member }}$</p>
                       </div>
                       <div>
                         <img src="https://secure.gravatar.com/avatar/52f166870cb00f0357cb8a2b512a7a41?d=identicon" alt="ljc">
                         <p>ljc</p>
-                        <p>Android 组成员</p>
+                        <p>${{ index.team.android.member }}$</p>
                       </div>
                       <div>
                         <img src="https://secure.gravatar.com/avatar/7481d2a087fd896f1728e2e8f7d4a225?s=303&d=identicon" alt="codyworry">
                         <p>codyworry</p>
-                        <p>Android 组成员</p>
+                        <p>${{ index.team.android.member }}$</p>
                       </div>
                       <div>
                         <img src="https://secure.gravatar.com/avatar/a2baefb7fa8180670480fd97b61fcc8f?s=303&d=identicon" alt="roy7wt">
                         <p>roy7wt</p>
-                        <p>Android 组成员</p>
+                        <p>${{ index.team.android.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -261,7 +262,7 @@
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/125/10115024_.jpg" alt="storm_spirit7">
                         <p>storm_spirit7</p>
-                        <p>Android 组成员</p>
+                        <p>${{ index.team.android.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -270,8 +271,8 @@
               <div class="selection simple" data-count="2" data-selector="#J_TeamAndroidAlbum"></div>
             </div>
             <div class="gall">
-              <p>Write the code.</p>
-              <p>Change the world.</p>
+              <p>${{ index.team.ios.desc1 }}$</p>
+              <p>${{ index.team.ios.desc2 }}$</p>
               <div class="galls-container album-box" id="J_TeamIOSAlbum">
                 <div class="galls">
                   <div class="gall">
@@ -279,17 +280,17 @@
                       <div>
                         <img src="https://avatars3.githubusercontent.com/u/7023694?v=3&s=303" alt="wry">
                         <p>wry</p>
-                        <p>iOS 组组长</p>
+                        <p>${{ index.team.ios.leader }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars3.githubusercontent.com/u/5630262?v=3&s=303" alt="Sway">
                         <p>Sway</p>
-                        <p>iOS 组成员</p>
+                        <p>${{ index.team.ios.member }}$</p>
                       </div>
                       <div>
                         <img src="http://secure.gravatar.com/avatar/8b17ec02770ea6b55acec3ddca3500d4?s=303&d=identicon" alt="kevinissun">
                         <p>kevinissun</p>
-                        <p>iOS 组成员</p>
+                        <p>${{ index.team.ios.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -298,8 +299,8 @@
               <div class="selection simple" data-count="1" data-selector="#J_TeamIOSAlbum"></div>
             </div>
             <div class="gall">
-              <p>我们希望用设计去更好地解决问题</p>
-              <p>从而让世界更美好一点点</p>
+              <p>${{ index.team.design.desc1 }}$</p>
+              <p>${{ index.team.design.desc2 }}$</p>
               <div class="galls-container album-box" id="J_TeamDesignAlbum">
                 <div class="galls">
                   <div class="gall">
@@ -307,12 +308,12 @@
                       <div>
                         <img src="https://avatars2.githubusercontent.com/u/9677264?v=3&s=303" alt="Scott">
                         <p>Scott</p>
-                        <p>设计组组长</p>
+                        <p>${{ index.team.design.leader }}$</p>
                       </div>
                       <div>
                         <img src="img/avatar/xiaofan.jpg" alt="xiaofan">
                         <p>xiaofan</p>
-                        <p>设计组成员</p>
+                        <p>${{ index.team.design.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -321,10 +322,10 @@
               <div class="selection simple" data-count="1" data-selector="#J_TeamDesignAlbum"></div>
             </div>
             <div class="gall">
-              <p>让每个人可以自由的获得源码</p>
-              <p>按照自己的意愿修改代码</p>
-              <p>从而使得所有使用的人都受益</p>
-              <p>这就是开源之美吧</p>
+              <p>${{ index.team.mos.desc1 }}$</p>
+              <p>${{ index.team.mos.desc2 }}$</p>
+              <p>${{ index.team.mos.desc3 }}$</p>
+              <p>${{ index.team.mos.desc4 }}$</p>
               <div class="galls-container album-box" id="J_TeamOCCAlbum">
                 <div class="galls">
                   <div class="gall">
@@ -332,22 +333,22 @@
                       <div>
                         <img src="https://avatars3.githubusercontent.com/u/5100735?v=3&s=303" alt="gaocegege">
                         <p>gaocegege</p>
-                        <p>MOS 组组长</p>
+                        <p>${{ index.team.mos.leader }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars1.githubusercontent.com/u/7459820?v=3&s=303" alt="mrmiywj">
                         <p>mrmiywj</p>
-                        <p>MOS 组成员</p>
+                        <p>${{ index.team.mos.member }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars1.githubusercontent.com/u/4508882?v=3&s=303" alt="arrowrowe">
                         <p>arrowrowe</p>
-                        <p>MOS 组成员</p>
+                        <p>${{ index.team.mos.member }}$</p>
                       </div>
                       <div>
                         <img src="https://avatars1.githubusercontent.com/u/8407172?v=3&s=303" alt="codeworm96">
                         <p>codeworm96</p>
-                        <p>MOS 组成员</p>
+                        <p>${{ index.team.mos.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -356,8 +357,8 @@
               <div class="selection simple" data-count="1" data-selector="#J_TeamOCCAlbum"></div>
             </div>
             <div class="gall">
-              <p>他们说: 你啥都不会只能做产品咯. <g-emoji alias="neutral_face" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f610.png" ios-version="6.0">😐</g-emoji></p>
-              <p>小凡姐说: 瞎讲, 做了产品我啥都会了. <g-emoji alias="smirk" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png" ios-version="6.0">😏</g-emoji></p>
+              <p>${{ index.team.marketing.desc1 }}$</p>
+              <p>${{ index.team.marketing.desc2 }}$</p>
               <div class="galls-container album-box" id="J_TeamMarketingAlbum">
                 <div class="galls">
                   <div class="gall">
@@ -365,27 +366,27 @@
                       <div>
                         <img src="img/avatar/xiaofan.jpg" alt="xiaofan">
                         <p>xiaofan</p>
-                        <p>产品组组长</p>
+                        <p>${{ index.team.marketing.leader }}$</p>
                       </div>
                       <div>
                         <img src="img/avatar/130B848.jpg" alt="130B848">
                         <p>130B848</p>
-                        <p>产品组成员</p>
+                        <p>${{ index.team.marketing.member }}$</p>
                       </div>
                       <div>
                         <img src="img/avatar/Birdy.jpg" alt="Birdy">
                         <p>Birdy</p>
-                        <p>产品组成员</p>
+                        <p>${{ index.team.marketing.member }}$</p>
                       </div>
                       <div>
                         <img src="img/avatar/Oliver_Huang.jpg" alt="Oliver_Huang">
                         <p>Oliver_Huang</p>
-                        <p>产品组成员</p>
+                        <p>${{ index.team.marketing.member }}$</p>
                       </div>
                       <div>
                         <img src="img/avatar/V.K.Yeah!.jpg" alt="V.K.Yeah!">
                         <p>V.K.Yeah!</p>
-                        <p>产品组成员</p>
+                        <p>${{ index.team.marketing.member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -403,22 +404,22 @@
                       <div>
                         <img src="https://git.tongqu.me/uploads/user/avatar/65/5.jpg" alt="xyp">
                         <p>xyp</p>
-                        <p>人资</p>
+                        <p>${{ index.team.more.hr }}$</p>
                       </div>
                       <div>
                         <img src="https://secure.gravatar.com/avatar/edd6e79a98c7a360a2a8883c557f0d75?s=303&d=identicon" alt="skc">
                         <p>skc</p>
-                        <p>业务部部长</p>
+                        <p>${{ index.team.more.business_leader }}$</p>
                       </div>
                       <div>
                         <img src="img/avatar/zoeylee.jpg" alt="zoey">
                         <p>zoey</p>
-                        <p>业务部成员</p>
+                        <p>${{ index.team.more.business_member }}$</p>
                       </div>
                       <div>
                         <img src="img/avatar/daniel.jpg" alt="daniel">
                         <p>Daniel <g-emoji alias="full_moon" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f315.png" ios-version="6.0">🌕</g-emoji></p>
-                        <p>业务部成员</p>
+                        <p>${{ index.team.more.business_member }}$</p>
                       </div>
                     </div>
                   </div>
@@ -431,47 +432,47 @@
       </div>
     </div>
     <div class="part cases">
-      <h2 id="part-cases">案例</h2>
-      <p>Cases</p>
+      <h2 id="part-cases">${{ index.part.cases }}$</h2>
+      <p>${{ index.part.cases_en }}$</p>
       <div class="panel">
-        <p class="large" id="J_CaseName">Web 端</p>
+        <p class="large" id="J_CaseName">${{ index.cases.web.name }}$</p>
         <div class="selection arrow" data-selector="#J_Cases"></div>
         <div class="galls-container" id="J_Cases">
           <div class="galls">
             <div class="gall">
               <div class="sample" id="J_CaseWebSample">
-                <img class="active" src="/img/project/tongqu.png" alt="Tongqu.me">
-                <img src="/img/project/aixinwu.png" alt="爱心屋">
-                <img src="/img/project/electsys.png" alt="Electsys++">
-                <img src="/img/project/junxun.png" alt="新生军训网">
-                <img src="/img/project/junzheng.png" alt="䇹政主页">
+                <img class="active" src="/img/project/tongqu.png" alt="${{ index.cases.web.tongqu.name }}$">
+                <img src="/img/project/aixinwu.png" alt="${{ index.cases.web.aixinwu.name }}$">
+                <img src="/img/project/electsys.png" alt="${{ index.cases.web.electsys.name }}$">
+                <img src="/img/project/junxun.png" alt="${{ index.cases.web.junxun.name }}$">
+                <img src="/img/project/junzheng.png" alt="${{ index.cases.web.junzheng.name }}$">
               </div>
               <div class="panel galls-container" id="J_CaseWebAlbum">
                 <div class="galls">
                   <div class="gall">
-                    <p class="title">同去网</p>
-                    <p class="description">交大校内影响最大的活动发布平台</p>
-                    <a class="btn" href="http://tongqu.me" target="_blank">去看看</a>
+                    <p class="title">${{ index.cases.web.tongqu.name }}$</p>
+                    <p class="description">${{ index.cases.web.tongqu.desc }}$</p>
+                    <a class="btn" href="https://tongqu.me" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div>
                   <div class="gall">
-                    <p class="title">绿色爱心屋</p>
-                    <p class="description">交大公益慈善捐赠平台</p>
-                    <a class="btn" href="http://aixinwu.sjtu.edu.cn" target="_blank">去看看</a>
+                    <p class="title">${{ index.cases.web.aixinwu.name }}$</p>
+                    <p class="description">${{ index.cases.web.aixinwu.desc }}$</p>
+                    <a class="btn" href="http://aixinwu.sjtu.edu.cn" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div>
                   <div class="gall">
-                    <p class="title">Electsys++</p>
-                    <p class="description">交大选课网优化插件</p>
-                    <a class="btn" href="https://github.com/laohyx/electsys" target="_blank">去看看</a>
+                    <p class="title">${{ index.cases.web.electsys.name }}$</p>
+                    <p class="description">${{ index.cases.web.electsys.desc }}$</p>
+                    <a class="btn" href="https://github.com/laohyx/electsys" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div>
                   <div class="gall">
-                    <p class="title">新生军训网</p>
-                    <p class="description">历年军训官方平台</p>
-                    <a class="btn" href="http://junxun.sjtu.edu.cn" target="_blank">去看看</a>
+                    <p class="title">${{ index.cases.web.junxun.name }}$</p>
+                    <p class="description">${{ index.cases.web.junxun.desc }}$</p>
+                    <a class="btn" href="http://junxun.sjtu.edu.cn" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div>
                   <div class="gall">
-                    <p class="title">䇹政主页</p>
-                    <p class="description">䇹政基金管理委员会</p>
-                    <a class="btn" href="http://www.jun-zheng.cn" target="_blank">去看看</a>
+                    <p class="title">${{ index.cases.web.junzheng.name }}$</p>
+                    <p class="description">${{ index.cases.web.junzheng.desc }}$</p>
+                    <a class="btn" href="http://www.jun-zheng.cn" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div>
                 </div>
               </div>
@@ -487,14 +488,14 @@
               <div class="panel galls-container" id="J_CaseAndroidAlbum">
                 <div class="galls">
                   <div class="gall">
-                    <p class="title">同去</p>
-                    <p class="description">精彩活动&ensp;与你同去</p>
-                    <a class="btn" href="http://tongqu.me/index.php/app" target="_blank">去看看</a>
+                    <p class="title">${{ index.cases.android.tongqu.name }}$</p>
+                    <p class="description">${{ index.cases.android.tongqu.desc }}$</p>
+                    <a class="btn" href="https://tongqu.me/index.php/app" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div>
                   <div class="gall">
-                    <p class="title">交汇</p>
-                    <p class="description">交大生活助手</p>
-                    <a class="btn" href="http://www.wandoujia.com/apps/com.dongyueweb.app.crossy" target="_blank">去看看</a>
+                    <p class="title">${{ index.cases.android.crossy.name }}$</p>
+                    <p class="description">${{ index.cases.android.crossy.desc }}$</p>
+                    <a class="btn" href="http://www.wandoujia.com/apps/com.dongyueweb.app.crossy" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div>
                 </div>
               </div>
@@ -510,14 +511,14 @@
               <div class="panel galls-container" id="J_CaseIOSAlbum">
                 <div class="galls">
                   <div class="gall">
-                    <p class="title">iTongqu</p>
-                    <p class="description">精彩活动&ensp;与你同去</p>
-                    <a class="btn" href="http://tongqu.me/index.php/app" target="_blank">去看看</a>
+                    <p class="title">${{ index.cases.ios.tongqu.name }}$</p>
+                    <p class="description">${{ index.cases.ios.tongqu.desc }}$</p>
+                    <a class="btn" href="https://tongqu.me/index.php/app" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div>
                   <!-- <div class="gall">
                     <p class="title">交汇</p>
                     <p class="description">交大生活助手</p>
-                    <a class="btn" href="https://itunes.apple.com/cn/app/jiao-huicrossy-jiao-da-sheng/id1019173353" target="_blank">去看看</a>
+                    <a class="btn" href="https://itunes.apple.com/cn/app/jiao-huicrossy-jiao-da-sheng/id1019173353" target="_blank">${{ index.cases.link_btn }}$</a>
                   </div> -->
                 </div>
               </div>
@@ -530,37 +531,55 @@
       </div>
     </div>
     <div class="part white consultation">
-      <h2 id="part-consultation">合作咨询</h2>
-      <p>Consultation</p>
+      <h2 id="part-consultation">${{ index.part.consultation }}$</h2>
+      <p>${{ index.part.consultation_en }}$</p>
       <div class="border white four">
-        <p>我们所提供的服务</p>
+        <p>${{ index.consultation.title }}$</p>
         <ul>
-          <li><div class="icon icon-chrome"></div>Web 端开发</li>
-          <li><div class="icon icon-apple"></div>iOS 端开发</li>
-          <li><div class="icon icon-android"></div>Android 端开发</li>
-          <li><div class="icon icon-grid"></div>其他技术开发</li>
+          <li><div class="icon icon-chrome"></div>${{ index.consultation.web }}$</li>
+          <li><div class="icon icon-apple"></div>${{ index.consultation.ios }}$</li>
+          <li><div class="icon icon-android"></div>${{ index.consultation.android }}$</li>
+          <li><div class="icon icon-grid"></div>${{ index.consultation.other }}$</li>
         </ul>
       </div>
-      <p>若有合作意向，请填写下方合作意向表，我们会及时与您取得联系</p>
-      <div class="btn" onclick="window.open('https://commouse.typeform.com/to/M0hAVd', '_blank')">填写服务申请表</div>
+      <p>${{ index.consultation.cooperation }}$</p>
+      <div class="btn" onclick="window.open('https://commouse.typeform.com/to/M0hAVd', '_blank')">${{ index.consultation.form_btn }}$</div>
     </div>
     <div class="part white footer">
       <div class="banner">
-        <h3>东岳网络工作室</h3>
-        <p>Dongyue Studio</p>
+        <h3>${{ index.dongyue.name }}$</h3>
+        <p>${{ index.dongyue.sub }}$</p>
       </div>
-      <p class="sub-banner">交大校园内优秀的互联网人才成长平台</p>
+      <p class="sub-banner">${{ index.dongyue.desc }}$</p>
       <p class="contact">
         <i class="icon icon-mail"></i>
-        电子邮箱：contact@dongyue.io
+        ${{ index.footer.mail }}$
       </p>
     </div>
     <div class="part white copyright">
-    	<p>Copyright &copy; 2011-2017 东岳网络工作室</p>
-    	<a href="/old">返回旧版</a>
+    	<p>${{ index.footer.copyright }}$</p>
+    	<a href="/old">${{ index.footer.old }}$</a>
     </div>
   </div>
 
+
+<script>
+  window.teams = [
+    '${{ index.team.web.name }}$',
+    '${{ index.team.android.name }}$',
+    '${{ index.team.ios.name }}$',
+    '${{ index.team.design.name }}$',
+    '${{ index.team.mos.name }}$',
+    '${{ index.team.marketing.name }}$',
+    '${{ index.team.more.name }}$'
+  ];
+
+  window.cases = [
+    '${{ index.cases.web.name }}$',
+    '${{ index.cases.android.name }}$',
+    '${{ index.cases.ios.name }}$'
+  ];
+</script>
 
 <script type="text/javascript" src="@tam/index"></script>
 

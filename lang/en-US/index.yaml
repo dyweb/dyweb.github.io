@@ -1,0 +1,140 @@
+# Title
+
+title:
+  dongyue: Dongyue Studio
+  keywords: Dongyue,Tongqu,Campus,SJTU,Internet
+  description: ''
+
+part:
+  index: Home
+  about: About us
+  about_en: ''
+  team: Team
+  team_en: ''
+  cases: Cases
+  cases_en: ''
+  consultation: Consultation
+  consultation_en: ''
+  blog: Blog
+
+dongyue:
+  name: Dongyue Studio
+  sub: 东岳网络工作室
+  desc: Excellent talent growth platform for SJTU geekers
+
+about:
+  platform:
+    title: Talent Growth Platform for SJTU Geekers
+    human: Growth
+    lightning: Innovation
+    earth: Collbration
+  training:
+    title: Diverse Training Approaches
+    compass: Instruction
+    bin: Party
+    memo: Project
+  service:
+    title: Outstanding Development Service
+    screen: Cross-platform
+    pad: Entireness
+    mobile: Profession
+
+team:
+  web:
+    name: Web Team
+    desc1: ''
+    desc2: ''
+    president: President
+    former_president: Former President
+    leader: Team Leader
+    former_leader: Former Team Leader
+    member: Member
+  android:
+    name: Android Team
+    desc1: ''
+    desc2: ''
+    leader: Team Leader
+    former_leader: Former Team Leader
+    member: Member
+  ios:
+    name: iOS Team
+    desc1: ''
+    desc2: ''
+    leader: Team Leader
+    former_leader: Former Team Leader
+    member: Member
+  design:
+    name: Design Team
+    desc1: ''
+    desc2: ''
+    leader: Team Leader
+    former_leader: Former Team Leader
+    member: Member
+  mos:
+    name: MOOC & Open Source Team
+    desc1: ''
+    desc2: ''
+    desc3: ''
+    desc4: ''
+    leader: Team Leader
+    former_leader: Former Team Leader
+    member: Member
+  marketing:
+    name: Marketing Team
+    desc1: ''
+    desc2: ''
+    leader: Team Leader
+    former_leader: Former Team Leader
+    member: Member
+  more:
+    name: 'And More...'
+    hr: Human Resources
+    business_leader: Business Dept Leader
+    business_member: Business Dept Member
+
+cases:
+  link_btn: Take a look
+  web:
+    name: Website
+    tongqu:
+      name: Tongqu
+      desc: Popular event platform of SJTU
+    aixinwu:
+      name: Aixinwu
+      desc: SJTU Donation Platform
+    electsys:
+      name: Electsys++
+      desc: Optimization plugin for Electsys
+    junxun:
+      name: Freshman Junxun Website
+      desc: Official Platform of SJTU Military Training
+    junzheng:
+      name: CURE Homepage
+      desc: The Hui-Chun Chin and Tsung-Dao Lee Endowment Program Commision
+  android:
+    name: Android App
+    tongqu:
+      name: Tongqu
+      desc: Popular event platform of SJTU
+    crossy:
+      name: Crossy
+      desc: 'SJTU Life Assistant'
+  ios:
+    name: iOS App
+    tongqu:
+      name: iTongqu
+      desc: Popular event platform of SJTU
+
+consultation:
+  title: Our Services
+  web: Web Dev
+  android: Android Dev
+  ios: iOS Dev
+  other: Miscellaneous
+  cooperation: ''
+  form_btn: Contact Us
+
+footer:
+  mail: 'E-mail: contact@dongyue.io'
+  copyright: Copyright &copy; 2011-2017 Dongyue Studio
+  old: Previous Version

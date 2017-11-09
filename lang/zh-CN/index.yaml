@@ -1,0 +1,140 @@
+# Title
+
+title:
+  dongyue: 东岳网络工作室 | Dongyue Studio
+  keywords: 东岳,工作室,同去,上海交大,交大,校园,互联网
+  description: 东岳网络工作室是由交大学生成立的互联网产品开发工作室，是目前交大规模最大最专业的学生技术组织，为学校、学院、学生组织提供丰富的网络产品开发服务，让交大师生的工作、学习、生活变得更高效、更便捷。
+
+part:
+  index: 首页
+  about: 关于我们
+  about_en: About us
+  team: 团队
+  team_en: Team
+  cases: 案例
+  cases_en: Cases
+  consultation: 合作咨询
+  consultation_en: Consultation
+  blog: 博客
+
+dongyue:
+  name: 东岳网络工作室
+  sub: Dongyue Studio
+  desc: 交大校园内优秀的互联网人才成长平台
+
+about:
+  platform:
+    title: 我们致力于在交大校园内打造一个优秀的互联网人才成长平台
+    human: 我们关注人的成长
+    lightning: 我们相信自由和创新的精神
+    earth: 我们鼓励更多的沟通与协作
+  training:
+    title: 我们致力于探索不同的人才培养方式
+    compass: 提供完整的指导体系
+    bin: 定期聚会交流分享
+    memo: 通过项目锻炼成员
+  service:
+    title: 我们致力于提供优秀的互联网产品开发服务
+    screen: 跨平台的开发服务
+    pad: 完整的开发流程
+    mobile: 专业的合作态度
+
+team:
+  web:
+    name: Web 组
+    desc1: 我们时刻关注着前后端的最新技术
+    desc2: Vue.js, NodeJS, MySQL, ...
+    president: 负责人
+    former_president: 前负责人
+    leader: Web 组组长
+    former_leader: Web 组前组长
+    member: Web 组成员
+  android:
+    name: Android 组
+    desc1: 少年，我见你脑后冒着绿光
+    desc2: 跟我学写 Android 吧
+    leader: Android 组组长
+    former_leader: Android 组前组长
+    member: Android 组成员
+  ios:
+    name: iOS 组
+    desc1: Write the code.
+    desc2: Change the world.
+    leader: iOS 组组长
+    former_leader: iOS 组前组长
+    member: iOS 组成员
+  design:
+    name: 设计组
+    desc1: 我们希望用设计去更好地解决问题
+    desc2: 从而让世界更美好一点点
+    leader: 设计组组长
+    former_leader: 设计组前组长
+    member: 设计组成员
+  mos:
+    name: MOOC & Open Source 组
+    desc1: 让每个人可以自由的获得源码
+    desc2: 按照自己的意愿修改代码
+    desc3: 从而使得所有使用的人都受益
+    desc4: 这就是开源之美吧
+    leader: MOS 组组长
+    former_leader: MOS 组前组长
+    member: MOS 组成员
+  marketing:
+    name: 运营组
+    desc1: '他们说: 你啥都不会只能做产品咯. <g-emoji alias="neutral_face" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f610.png" ios-version="6.0">😐</g-emoji>'
+    desc2: '小凡姐说: 瞎讲, 做了产品我啥都会了. <g-emoji alias="smirk" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60f.png" ios-version="6.0">😏</g-emoji>'
+    leader: 运营组组长
+    former_leader: 运营组前组长
+    member: 运营组成员
+  more:
+    name: '呃... and more...'
+    hr: 人资
+    business_leader: 业务部组长
+    business_member: 业务部成员
+
+cases:
+  link_btn: 去看看
+  web:
+    name: Web 端
+    tongqu:
+      name: 同去网
+      desc: 交大校内影响最大的活动发布平台
+    aixinwu:
+      name: 爱心屋
+      desc: 交大公益慈善捐赠平台
+    electsys:
+      name: Electsys++
+      desc: 交大选课网优化插件
+    junxun:
+      name: 新生军训网
+      desc: 历年军训官方平台
+    junzheng:
+      name: 䇹政主页
+      desc: 䇹政基金管理委员会
+  android:
+    name: Android App
+    tongqu:
+      name: 同去
+      desc: 精彩活动&ensp;与你同去
+    crossy:
+      name: 交汇
+      desc: 交大生活助手
+  ios:
+    name: iOS App
+    tongqu:
+      name: iTongqu
+      desc: 精彩活动&ensp;与你同去
+
+consultation:
+  title: 我们所提供的服务
+  web: Web 端开发
+  android: Android 端开发
+  ios: iOS 端开发
+  other: 其他技术开发
+  cooperation: 若有合作意向，请填写下方合作意向表，我们会及时与您取得联系
+  form_btn: 填写服务申请表
+
+footer:
+  mail: '电子邮箱：contact@dongyue.io'
+  copyright: Copyright &copy; 2011-2017 东岳网络工作室
+  old: 返回旧版
