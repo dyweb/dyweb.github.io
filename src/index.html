@@ -22,8 +22,10 @@
         <li><a href="#part-about">${{ index.part.about }}$</a></li>
         <li><a href="#part-team">${{ index.part.team }}$</a></li>
         <li><a href="#part-cases">${{ index.part.cases }}$</a></li>
-        <li><a href="#part-consultation">${{ index.part.consultation }}$</a></li>
-        <li><a href="http://blog.dongyueweb.com" target="_blank">${{ index.part.blog }}$</a></li>
+        <!-- <li><a href="#part-consultation">${{ index.part.consultation }}$</a></li> -->
+        <li><a href="#part-recruit">${{ index.part.recruit }}$</a></li>
+        <li><a href="${{ index.translation.url }}$">${{ index.part.translation }}$</a></li>
+        <!-- <li><a href="http://blog.dongyueweb.com" target="_blank">${{ index.part.blog }}$</a></li> -->
       </ul>
       <h1>${{ index.dongyue.name }}$</h1>
       <p>${{ index.dongyue.sub }}$<!--. <span class="purple">设计组</span>--></p>
@@ -530,7 +532,7 @@
         </div>
       </div>
     </div>
-    <div class="part white consultation">
+    <!-- <div class="part white consultation">
       <h2 id="part-consultation">${{ index.part.consultation }}$</h2>
       <p>${{ index.part.consultation_en }}$</p>
       <div class="border white four">
@@ -544,6 +546,21 @@
       </div>
       <p>${{ index.consultation.cooperation }}$</p>
       <div class="btn" onclick="window.open('https://commouse.typeform.com/to/M0hAVd', '_blank')">${{ index.consultation.form_btn }}$</div>
+    </div> -->
+    <div class="part white consultation">
+      <h2 id="part-recruit">${{ index.part.recruit }}$</h2>
+      <p>${{ index.part.recruit_en }}$</p>
+      <div class="border white four">
+        <p>${{ index.recruit.title }}$</p>
+        <ul>
+          <li><div class="icon icon-chrome"></div>${{ index.recruit.web }}$</li>
+          <li><div class="icon icon-apple"></div>${{ index.recruit.ios }}$</li>
+          <li><div class="icon icon-android"></div>${{ index.recruit.android }}$</li>
+          <li><div class="icon icon-grid"></div>${{ index.recruit.other }}$</li>
+        </ul>
+      </div>
+      <p>${{ index.recruit.join }}$</p>
+      <div class="btn" onclick="window.open('http://dongyueweb.com/join-us', '_blank')">${{ index.recruit.join_btn }}$</div>
     </div>
     <div class="part white footer">
       <div class="banner">
@@ -557,8 +574,13 @@
       </p>
     </div>
     <div class="part white copyright">
-    	<p>${{ index.footer.copyright }}$</p>
-    	<a href="/old">${{ index.footer.old }}$</a>
+      <p>${{ index.footer.copyright }}$</p>
+      <span class="list">
+        <a href="http://blog.dongyueweb.com" target="_blank">${{ index.footer.blog }}$</a> |
+        <a href="https://zhuanlan.zhihu.com/dongyue" target="_blank">${{ index.footer.zhihu }}$</a> |
+        <a href="https://github.com/dyweb" target="_blank">${{ index.footer.github }}$</a> |
+        <a href="/old">${{ index.footer.old }}$</a>
+      </span>
     </div>
   </div>
 

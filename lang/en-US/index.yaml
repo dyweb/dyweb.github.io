@@ -15,7 +15,13 @@ part:
   cases_en: ''
   consultation: Consultation
   consultation_en: ''
+  recruit: Join us
+  recruit_en: ''
   blog: Blog
+  translation: 中文
+
+translation:
+  url: index.html
 
 dongyue:
   name: Dongyue Studio
@@ -134,7 +140,19 @@ consultation:
   cooperation: ''
   form_btn: Contact Us
 
+recruit:
+  title: If you are interested in
+  web: Website
+  android: Android App
+  ios: iOS App
+  other: Product
+  join: Come and be one of us
+  join_btn: Join Us
+
 footer:
   mail: 'E-mail: contact@dongyue.io'
   copyright: Copyright &copy; 2011-2017 Dongyue Studio
+  blog: Blog
+  zhihu: Zhihu
+  github: GitHub
   old: Previous Version

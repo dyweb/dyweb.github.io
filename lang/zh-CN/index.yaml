@@ -15,7 +15,13 @@ part:
   cases_en: Cases
   consultation: 合作咨询
   consultation_en: Consultation
+  recruit: 加入我们
+  recruit_en: Join us
   blog: 博客
+  translation: English
+
+translation:
+  url: index-en-US.html
 
 dongyue:
   name: 东岳网络工作室
@@ -134,7 +140,19 @@ consultation:
   cooperation: 若有合作意向，请填写下方合作意向表，我们会及时与您取得联系
   form_btn: 填写服务申请表
 
+recruit:
+  title: 如果你对这些满怀热情
+  web: Website
+  android: Android App
+  ios: iOS App
+  other: Product
+  join: 我们随时欢迎你的加入
+  join_btn: 了解详情
+
 footer:
   mail: '电子邮箱：contact@dongyue.io'
   copyright: Copyright &copy; 2011-2017 东岳网络工作室
+  blog: 博客
+  zhihu: 知乎
+  github: GitHub
   old: 返回旧版

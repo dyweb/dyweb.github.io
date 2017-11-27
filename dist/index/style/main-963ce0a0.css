@@ -1387,10 +1387,14 @@ th {
 
 .copyright a {
   display: inline-block;
-  margin: 8px;
+  margin: 8px 4px;
   font-size: 16px;
   color: #aaa;
   text-decoration: none;
+}
+
+.copyright span {
+  color: #aaa;
 }
 
 .recruit {
