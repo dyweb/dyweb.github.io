@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "gulp-rename": "^1.2.2",
+    "node-sass": "^4.7.2",
     "tam-i18n": "^0.2.0"
   }
 }
