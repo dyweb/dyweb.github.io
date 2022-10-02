@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c97e4749.css",
+    "main.js": "/static/js/main.83d651cb.js",
+    "static/js/787.49f73819.chunk.js": "/static/js/787.49f73819.chunk.js",
+    "static/media/CascadiaCode-Regular.woff2": "/static/media/CascadiaCode-Regular.66e0a5da8da15caf0749.woff2",
+    "static/media/logo.svg": "/static/media/logo.ca84220dd4d530ae734dd346eb0258cc.svg",
+    "static/media/triangle.svg": "/static/media/triangle.3f88a8d08e98fb9a6b897313fb530931.svg",
+    "index.html": "/index.html",
+    "main.c97e4749.css.map": "/static/css/main.c97e4749.css.map",
+    "main.83d651cb.js.map": "/static/js/main.83d651cb.js.map",
+    "787.49f73819.chunk.js.map": "/static/js/787.49f73819.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c97e4749.css",
+    "static/js/main.83d651cb.js"
+  ]
+}
