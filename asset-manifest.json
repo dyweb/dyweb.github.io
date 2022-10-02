@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4abd59c1.css",
+    "main.css": "/static/css/main.bab4ca5b.css",
     "main.js": "/static/js/main.83d651cb.js",
     "static/js/787.49f73819.chunk.js": "/static/js/787.49f73819.chunk.js",
     "static/media/CascadiaCode-Subset.woff2": "/static/media/CascadiaCode-Subset.891be8d58623d3e81738.woff2",
     "static/media/logo.svg": "/static/media/logo.ca84220dd4d530ae734dd346eb0258cc.svg",
     "index.html": "/index.html",
     "static/media/triangle.svg": "/static/media/triangle.3f88a8d08e98fb9a6b897313fb530931.svg",
-    "main.4abd59c1.css.map": "/static/css/main.4abd59c1.css.map",
+    "static/media/SourceHanSansCN-Subset.woff2": "/static/media/SourceHanSansCN-Subset.31d6cfe0d16ae931b73c.woff2",
+    "main.bab4ca5b.css.map": "/static/css/main.bab4ca5b.css.map",
     "main.83d651cb.js.map": "/static/js/main.83d651cb.js.map",
     "787.49f73819.chunk.js.map": "/static/js/787.49f73819.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4abd59c1.css",
+    "static/css/main.bab4ca5b.css",
     "static/js/main.83d651cb.js"
   ]
 }
