@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.fb02b7ca.css",
-    "main.js": "/static/js/main.7da5ecdc.js",
+    "main.js": "/static/js/main.c0bbfe6b.js",
     "static/js/787.49f73819.chunk.js": "/static/js/787.49f73819.chunk.js",
     "static/media/CascadiaCode-Subset.woff2": "/static/media/CascadiaCode-Subset.891be8d58623d3e81738.woff2",
     "index.html": "/index.html",
     "static/media/SourceHanSansCN-Subset.woff2": "/static/media/SourceHanSansCN-Subset.31d6cfe0d16ae931b73c.woff2",
     "main.fb02b7ca.css.map": "/static/css/main.fb02b7ca.css.map",
-    "main.7da5ecdc.js.map": "/static/js/main.7da5ecdc.js.map",
+    "main.c0bbfe6b.js.map": "/static/js/main.c0bbfe6b.js.map",
     "787.49f73819.chunk.js.map": "/static/js/787.49f73819.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb02b7ca.css",
-    "static/js/main.7da5ecdc.js"
+    "static/js/main.c0bbfe6b.js"
   ]
 }
