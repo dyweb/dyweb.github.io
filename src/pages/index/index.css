@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'CascadiaCode';
+  src: local('CascadiaCode'), url(../../assets/fonts/CascadiaCode-Subset.woff2) format('woff');
+}
+
+@font-face {
+  font-family: 'SourceHanSans';
+  src: local('SourceHanSans'), url(../../assets/fonts/SourceHanSansCN-Subset.woff2) format('opentype');
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-logo {
+  height: 3.2em;
+  pointer-events: none;
+}
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
+
+.eng-name {
+  font-size: 1.4em;
+  display: flex;
+  line-height: 3.2em;
+}
+
+.chs-name {
+  font-size: 1em;
+  font-family: PingFang SC, SourceHanSans, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei, sans-serif;
+}
+
+.links {
+  padding-top: 2em;
+  font-size: 1.4em;
+}
+
+.links a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: CascadiaCode, monospace;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-flicker {
+  -webkit-animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 1s infinite;
+  -o-animation: flickerAnimation 1s infinite;
+  animation: flickerAnimation 1s infinite;
+}
+
+.triangle {
+  width: 1em;
+  height: 1em;
+}
+
